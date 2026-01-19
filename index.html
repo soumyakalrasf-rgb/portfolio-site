@@ -102,7 +102,10 @@
         <div class="max-w-6xl mx-auto px-4">
             <!-- Tab Navigation -->
             <div class="flex justify-center mb-8 border-b border-slate-200">
-                <button class="tab-btn active px-6 py-3 text-sm font-medium border-b-2 border-transparent transition-colors" data-tab="talks">
+                <button class="tab-btn active px-6 py-3 text-sm font-medium border-b-2 border-transparent transition-colors" data-tab="blog">
+                    Blog
+                </button>
+                <button class="tab-btn px-6 py-3 text-sm font-medium border-b-2 border-transparent text-slate-500 hover:text-slate-700 transition-colors" data-tab="talks">
                     Talks
                 </button>
                 <button class="tab-btn px-6 py-3 text-sm font-medium border-b-2 border-transparent text-slate-500 hover:text-slate-700 transition-colors" data-tab="projects">
@@ -113,8 +116,46 @@
                 </button>
             </div>
 
+            <!-- Tab: Blog -->
+            <div id="blog" class="tab-content active">
+                <article class="max-w-3xl mx-auto">
+                    <header class="mb-6">
+                        <p class="text-accent-500 text-sm font-medium uppercase tracking-wide mb-2">January 2025</p>
+                        <h2 class="font-display text-2xl md:text-3xl font-bold text-slate-900">Ship Your Site Faster: Building with AI</h2>
+                    </header>
+                    <div class="prose prose-slate max-w-none">
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            Building a personal website used to be a multi-week marathon. But with the right stack—and a little help from AI—it's now a sprint.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            I even used Gemini as a 'prompt architect'—feeding it my rough ideas (because it has more context on me through chats) and having it craft the perfect instructions for Claude Code. Think of it as having one AI help you talk to another AI.
+                        </p>
+                        <h3 class="font-display text-lg font-semibold text-slate-900 mt-6 mb-3">The Stack</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            I kept things simple: plain HTML5, Tailwind CSS for styling, and GitHub Pages for deployment. My domain came from Namecheap, which made the final connection... complicated (more on that in a second).
+                        </p>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            The build was surprisingly smooth, but I hit my biggest roadblock at the finish line: <strong>connecting my custom domain.</strong> I had an old project hogging the domain settings, and disconnecting it from an old repo to point it toward my new GitHub project was the one part AI couldn't solve for me.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed mb-4 bg-accent-50 p-4 rounded-lg border-l-4 border-accent-400">
+                            <strong>Pro-tip:</strong> If you're repurposing a domain, clear your DNS settings and old hosting connections <em>before</em> you try to link your new deployment. It'll save you an hour of head-scratching.
+                        </p>
+                        <h3 class="font-display text-lg font-semibold text-slate-900 mt-6 mb-3">Resources That Got Me There</h3>
+                        <ul class="text-slate-600 space-y-2 mb-4">
+                            <li>• <a href="https://www.youtube.com/watch?v=SKBDC3QugZw" target="_blank" class="text-accent-500 hover:text-accent-600 underline">Riley Brown's Video Tutorial</a>: Step-by-step Claude Code setup</li>
+                            <li>• <a href="https://x.com/FarzaTV" target="_blank" class="text-accent-500 hover:text-accent-600 underline">Building with Farza</a>: Live build session with community feedback</li>
+                            <li>• <a href="https://medium.com/@wuzezhen33/i-built-a-fancy-personal-website-in-a-day-using-claude-code-e548e5653ef2" target="_blank" class="text-accent-500 hover:text-accent-600 underline">Build a website in 1 day</a>: Proof you can ship something polished in under 24 hours</li>
+                        </ul>
+                        <h3 class="font-display text-lg font-semibold text-slate-900 mt-6 mb-3">The Takeaway</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Don't get bogged down in syntax. Focus on the vibe and the brand, and let AI agents handle the code. Start with Riley's tutorial, spend an afternoon with Claude Code, and you could be live by next weekend. The tools are ready—are you?
+                        </p>
+                    </div>
+                </article>
+            </div>
+
             <!-- Tab: Talks (Horizontal Carousel) -->
-            <div id="talks" class="tab-content active">
+            <div id="talks" class="tab-content">
                 <div class="carousel flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
                     <a href="https://www.youtube.com/watch?v=s5WeEVCi8VI" target="_blank" class="snap-start flex-shrink-0 w-72 bg-slate-50 rounded-xl border border-slate-200 overflow-hidden hover:shadow-md transition-shadow group">
                         <div class="aspect-video bg-gradient-to-br from-accent-100 to-accent-200 flex items-center justify-center">
